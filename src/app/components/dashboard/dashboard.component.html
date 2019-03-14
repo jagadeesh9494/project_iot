@@ -1,4 +1,4 @@
-<nav class="mb-1 navbar navbar-expand-lg navbar-dark  lighten-100">
+<nav class="mb-1 navbar navbar-expand-lg navbar-dark">
   <a class="navbar-brand" href="#"><img src="assets/images/gslab.PNG" style="width:70px"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
     aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,5 +45,240 @@
 </nav>
 
 <ng-container>
-  <mat-card class="top-card">simple card</mat-card>
+  <div class="row">
+    <!-- <div class="col-md-1"></div> -->
+      <div class="col-md-11">
+        <mat-card class="topcard">
+            <mat-card-title>Sensor 1</mat-card-title>
+        </mat-card>
+      </div>
+  </div>
+
+    <div class="col-md-12">
+      <div class="row">
+        <div class="col-md-5">
+          <mat-card>
+            <mat-card-title>Humidity</mat-card-title>
+              <!-- <div id="chartContainer" style="height: 300px; width: 100%;"></div> -->
+              <div>
+                  <div style="display: block;">
+                    <canvas 
+                      baseChart
+                      width="300"
+                      height="150"
+                      [datasets]="lineChartData"
+                      [labels]="lineChartLabels"
+                      [options]="lineChartOptions"
+                      [colors]="lineChartColors"
+                      [legend]="lineChartLegend"
+                      [chartType]="lineChartType"
+                      (chartHover)="chartHovered($event)"
+                      (chartClick)="chartClicked($event)"
+                    ></canvas>
+                  </div>
+                </div>
+          </mat-card>
+        </div>
+        <div class="col-md-5">
+          <mat-card>
+              <mat-card-title>Temparature</mat-card-title>
+            <!-- <div id="chartContainer" style="height: 300px; width: 100%;"></div> -->
+            <div>
+                <div style="display: block;">
+                  <canvas 
+                    baseChart
+                    width="300"
+                    height="150"
+                    [datasets]="lineChartData"
+                    [labels]="lineChartLabels"
+                    [options]="lineChartOptions"
+                    [colors]="lineChartColors"
+                    [legend]="lineChartLegend"
+                    [chartType]="lineChartType"
+                    (chartHover)="chartHovered($event)"
+                    (chartClick)="chartClicked($event)"
+                  ></canvas>
+                </div>
+              </div>
+          </mat-card>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+        <!-- <div class="col-md-1"></div> -->
+          <div class="col-md-11">
+            <mat-card class="topcard">
+                <mat-card-title>Sensor 2</mat-card-title>
+            </mat-card>
+          </div>
+      </div>
+    <div class="col-md-12">
+        <div class="row">
+            <div class="col-md-5">
+                <mat-card>
+                    <mat-card-title>Humidity</mat-card-title>
+                    <!-- <div id="chartContainer" style="height: 300px; width: 100%;"></div> -->
+                    <div>
+                        <div style="display: block;">
+                          <canvas 
+                            baseChart
+                            width="300"
+                            height="150"
+                            [datasets]="lineChartData"
+                            [labels]="lineChartLabels"
+                            [options]="lineChartOptions"
+                            [colors]="lineChartColors"
+                            [legend]="lineChartLegend"
+                            [chartType]="lineChartType"
+                            (chartHover)="chartHovered($event)"
+                            (chartClick)="chartClicked($event)"
+                          ></canvas>
+                        </div>
+                      </div>
+                  </mat-card>
+            </div>
+            <div class="col-md-5">
+                <mat-card>
+                    <mat-card-title>Temparature</mat-card-title>
+                    <!-- <div id="chartContainer" style="height: 300px; width: 100%;"></div> -->
+                    <div>
+                        <div style="display: block;">
+                          <canvas 
+                            baseChart
+                            width="300"
+                            height="150"
+                            [datasets]="lineChartData"
+                            [labels]="lineChartLabels"
+                            [options]="lineChartOptions"
+                            [colors]="lineChartColors"
+                            [legend]="lineChartLegend"
+                            [chartType]="lineChartType"
+                            (chartHover)="chartHovered($event)"
+                            (chartClick)="chartClicked($event)"
+                          ></canvas>
+                        </div>
+                      </div>
+                  </mat-card>
+            </div>
+        </div>
+    </div>
+
+  <div class="row">
+      <div class="col-md-11">
+          <mat-card class="topcard">
+              <mat-card-title>Sensor 3</mat-card-title>
+          </mat-card>
+      </div>
+  </div>
+
+      <div class="col-md-12">
+          <div class="row">
+              <div class="col-md-5">
+                  <mat-card>
+                      <mat-card-title>Humidity</mat-card-title>
+                      <!-- <div id="chartContainer" style="height: 300px; width: 100%;"></div> -->
+                      <div>
+                          <div style="display: block;">
+                            <canvas 
+                              baseChart
+                              width="300"
+                              height="150"
+                              [datasets]="lineChartData"
+                              [labels]="lineChartLabels"
+                              [options]="lineChartOptions"
+                              [colors]="lineChartColors"
+                              [legend]="lineChartLegend"
+                              [chartType]="lineChartType"
+                              (chartHover)="chartHovered($event)"
+                              (chartClick)="chartClicked($event)"
+                            ></canvas>
+                          </div>
+                        </div>
+                    </mat-card>
+              </div>
+              <div class="col-md-5">
+                  <mat-card>
+                      <mat-card-title>Temparature</mat-card-title>
+                      <!-- <div id="chartContainer" style="height: 300px; width: 100%;"></div> -->
+                      <div>
+                          <div style="display: block;">
+                            <canvas 
+                              baseChart
+                              width="300"
+                              height="150"
+                              [datasets]="lineChartData"
+                              [labels]="lineChartLabels"
+                              [options]="lineChartOptions"
+                              [colors]="lineChartColors"
+                              [legend]="lineChartLegend"
+                              [chartType]="lineChartType"
+                              (chartHover)="chartHovered($event)"
+                              (chartClick)="chartClicked($event)"
+                            ></canvas>
+                          </div>
+                        </div>
+                    </mat-card>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+          <!-- <div class="col-md-1"></div> -->
+            <div class="col-md-11">
+              <mat-card class="topcard">
+                  <mat-card-title>Sensor 4</mat-card-title>
+              </mat-card>
+            </div>
+        </div>
+      <div class="col-md-12">
+          <div class="row">
+              <div class="col-md-5">
+                  <mat-card>
+                      <mat-card-title>Humidity</mat-card-title>
+                      <!-- <div id="chartContainer" style="height: 100%; width: 100%;"></div> -->
+                      <div>
+                          <div style="display: block;">
+                            <canvas 
+                              baseChart
+                              width="300"
+                              height="150"
+                              [datasets]="lineChartData"
+                              [labels]="lineChartLabels"
+                              [options]="lineChartOptions"
+                              [colors]="lineChartColors"
+                              [legend]="lineChartLegend"
+                              [chartType]="lineChartType"
+                              (chartHover)="chartHovered($event)"
+                              (chartClick)="chartClicked($event)"
+                            ></canvas>
+                          </div>
+                        </div>
+                    </mat-card>
+              </div>
+              <div class="col-md-5">
+                  <mat-card>
+                    <mat-card-title>Temparature</mat-card-title>
+                      <!-- <div id="chartContainer" style="height: 300px; width: 100%;"></div> -->
+                      <div>
+                          <div style="display: block;">
+                            <canvas 
+                              baseChart
+                              width="300"
+                              height="150"
+                              [datasets]="lineChartData"
+                              [labels]="lineChartLabels"
+                              [options]="lineChartOptions"
+                              [colors]="lineChartColors"
+                              [legend]="lineChartLegend"
+                              [chartType]="lineChartType"
+                              (chartHover)="chartHovered($event)"
+                              (chartClick)="chartClicked($event)"
+                            ></canvas>
+                          </div>
+                        </div>
+                      
+                    </mat-card>
+              </div>
+          </div>
+      </div>
+
 </ng-container>

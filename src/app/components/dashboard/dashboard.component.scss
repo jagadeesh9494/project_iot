@@ -1,7 +1,40 @@
+mat-card-title {
+    text-align: center;
+}
 .top-card {
-    max-width: 40%;
-    height: 80px;
+    max-width: 100%;
+    height: 80%;
+}
+.left1{
+    float: left;
+    padding-left: 8%;
+}
+.right1{
+    float:right;
+    padding-right: 8%;
+}
+
+.col-md-11 {
+    background-color: #2f2f30;
     margin-left: auto;
     margin-right: auto;
-    background-color: whitesmoke;
-  }
+    margin-top: 0.5em;
+    color: white
+}
+.col-md-5 {
+    background-color: #2f2f30;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5em;
+    color: white
+}
+
+.row {
+    background-color:#171819;
+    margin-top: 0.5em;
+}
+
+#chartContainer {
+    background-color: #2f2f30
+}
+
